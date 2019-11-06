@@ -11,14 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 // outlets are before override funciton:
     
+    @IBOutlet weak var topText: UILabel!
     @IBOutlet var gameButtons: [GameButton]!
     
+    @IBOutlet weak var Grid: UIImageView!
     
+    var playerOne = false
     
-  override func viewDidLoad() {
+    override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    
+    WhoseTurnIsIt()
   }
    
     
@@ -42,7 +45,18 @@ class ViewController: UIViewController {
     }
     
     func WhoseTurnIsIt() {
-        var playersOneTurn = false
+        // need to give it a reason to change
+        
+        // tells me if it is playerOneTurn or PlayerTwoTurn
+        playerOne.toggle()
+        if playerOne {
+            Grid.tintColor = .yellow
+            topText.text = "It is player one's turn"
+        } else {
+            Grid.tintColor = .purple
+            topText.text = "It is player two's turn"
+        }
+        
         
 //         playerTwoTurn.toggle()
         
