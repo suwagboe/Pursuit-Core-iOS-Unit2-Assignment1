@@ -6,27 +6,33 @@
 //  Copyright © 2018 Pursuit. All rights reserved.
 //
 
+// need to keep a score and have a winner
+
 import UIKit
 
 class ViewController: UIViewController {
-// outlets are before override funciton:
+    // outlets are before override funciton:
     
     @IBOutlet weak var topText: UILabel!
-    @IBOutlet var gameButtons: [GameButton]!
+    
+    @IBOutlet var gameButtonsImage: [GameButton]!
     
     @IBOutlet weak var Grid: UIImageView!
     
     var playerOne = false
     
     override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    WhoseTurnIsIt()
-  }
-   
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        WhoseTurnIsIt()
+        //setButtonImage(gameButton)
+
+    }
     
+    // want to add an image to playerO
+    //  var playerO = UIImage.self
     
-// Actions
+    // Actions
     // var playerOneTurn = O = false
     // var playerTwoTurn = X = true
     
@@ -34,13 +40,25 @@ class ViewController: UIViewController {
     
     // if button is pressed then the image of x or o will show ..
     //
-    
-    
     @IBAction func gameButtonPressed(_ gameButton: GameButton) {
         print("row \(gameButton.row) and column \(gameButton.col) were selected")
         // one action for all buttons
+        
+        // I want something to happen
+        playerOne = !playerOne
+        setButtonImage(gameButton)
+        
+    }
+    
 
-      // I want something to happen
+    func setButtonImage(_ gameButton: GameButton) {
+        // https://stackoverflow.com/questions/26837371/how-to-change-uibutton-image-in-swift
+        
+        if Grid.tintColor == .yellow {
+            gameButton.setImage(UIImage(named: "pink x image"), for: .normal)
+        } else {
+            gameButton.setImage(UIImage(named: "purple o image"), for: .normal)
+        }
         
     }
     
@@ -56,13 +74,12 @@ class ViewController: UIViewController {
             Grid.tintColor = .purple
             topText.text = "It is player two's turn"
         }
-        
-        
-//         playerTwoTurn.toggle()
-        
     }
     
+   
     
-
+    
+    
+    
 }
 
