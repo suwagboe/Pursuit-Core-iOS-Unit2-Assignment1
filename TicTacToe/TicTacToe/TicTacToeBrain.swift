@@ -8,17 +8,24 @@
 
 import Foundation
 
+@available(iOS 13.0, *)
 class TicTacToeBrain {
     // all the information about ticTacToe should be in here
-    
-    var playerOne: String
-    // have to set it as a string for now
-    var playerTwo: String
-    
-    init(playerOne: String, playerTwo: String) {
-        self.playerOne = playerOne
-        self.playerTwo = playerTwo
-    }
 
+static let viewcontroller = ViewController()
+    // the viewController properties
+    
+static let switchThePlayers = SwitchThePlayers()
+    // the code that allows for the players to be switched
+    
+   let gameInfo = GameInfo()
+    // func  ~ hold the grig color based on whose turn is it
+    
+   static let howToWin = HowToWin()
+    // let WinningAlgorithm ~ the matrix on how to win
+    // func checkingWinningAlgorithm ~ checks who won
+    
+    
   
 }
+

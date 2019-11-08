@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C17CCC9237253A500115F8C /* playersinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17CCC8237253A500115F8C /* playersinfo.swift */; };
+		3C17CCC9237253A500115F8C /* PlayerSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C17CCC8237253A500115F8C /* PlayerSymbol.swift */; };
+		3C42E3282374BA76009228E2 /* HowToWinClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C42E3272374BA76009228E2 /* HowToWinClass.swift */; };
+		3C42E32A2374E9A8009228E2 /* SwitchThePlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C42E3292374E9A8009228E2 /* SwitchThePlayers.swift */; };
+		3C5E093D237394B50050D844 /* GameInfoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E093C237394B50050D844 /* GameInfoClass.swift */; };
 		57A2EF472194DBAF009B12CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2EF462194DBAF009B12CA /* AppDelegate.swift */; };
 		57A2EF492194DBAF009B12CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2EF482194DBAF009B12CA /* ViewController.swift */; };
 		57A2EF4C2194DBAF009B12CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A2EF4A2194DBAF009B12CA /* Main.storyboard */; };
@@ -18,7 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3C17CCC8237253A500115F8C /* playersinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playersinfo.swift; sourceTree = "<group>"; };
+		3C17CCC8237253A500115F8C /* PlayerSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSymbol.swift; sourceTree = "<group>"; };
+		3C42E3272374BA76009228E2 /* HowToWinClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HowToWinClass.swift; path = ../HowToWinClass.swift; sourceTree = "<group>"; };
+		3C42E3292374E9A8009228E2 /* SwitchThePlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchThePlayers.swift; sourceTree = "<group>"; };
+		3C5E093C237394B50050D844 /* GameInfoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoClass.swift; sourceTree = "<group>"; };
 		57A2EF432194DBAF009B12CA /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A2EF462194DBAF009B12CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57A2EF482194DBAF009B12CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,11 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				57A2EF462194DBAF009B12CA /* AppDelegate.swift */,
-				57A2EF482194DBAF009B12CA /* ViewController.swift */,
 				57A2EF4A2194DBAF009B12CA /* Main.storyboard */,
-				3C17CCC8237253A500115F8C /* playersinfo.swift */,
-				57A2EF582194DBFD009B12CA /* GameButton.swift */,
+				57A2EF482194DBAF009B12CA /* ViewController.swift */,
 				57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */,
+				3C42E3292374E9A8009228E2 /* SwitchThePlayers.swift */,
+				3C42E3272374BA76009228E2 /* HowToWinClass.swift */,
+				3C5E093C237394B50050D844 /* GameInfoClass.swift */,
+				57A2EF582194DBFD009B12CA /* GameButton.swift */,
+				3C17CCC8237253A500115F8C /* PlayerSymbol.swift */,
 				57A2EF4D2194DBB0009B12CA /* Assets.xcassets */,
 				57A2EF4F2194DBB0009B12CA /* LaunchScreen.storyboard */,
 				57A2EF522194DBB0009B12CA /* Info.plist */,
@@ -144,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5E093D237394B50050D844 /* GameInfoClass.swift in Sources */,
 				57A2EF492194DBAF009B12CA /* ViewController.swift in Sources */,
-				3C17CCC9237253A500115F8C /* playersinfo.swift in Sources */,
+				3C17CCC9237253A500115F8C /* PlayerSymbol.swift in Sources */,
 				57A2EF592194DBFD009B12CA /* GameButton.swift in Sources */,
+				3C42E32A2374E9A8009228E2 /* SwitchThePlayers.swift in Sources */,
+				3C42E3282374BA76009228E2 /* HowToWinClass.swift in Sources */,
 				57A2EF472194DBAF009B12CA /* AppDelegate.swift in Sources */,
 				57A2EF5B2194DC83009B12CA /* TicTacToeBrain.swift in Sources */,
 			);
